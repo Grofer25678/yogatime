@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Yoga Time — Личный кабинет</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page page-account">
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">
+      <img src="logo.jpg" alt="Yoga Time">
+    </div>
+    <nav class="main-nav">
+      <a href="index.html">Главная</a>
+      <a href="account.html" class="is-active">Личный кабинет</a>
+      <a href="profile.html">Профиль</a>
+      <a href="auth.html">Вход / регистрация</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="account-hero">
+    <div class="container">
+      <h1>Личный кабинет</h1>
+      <p>Выбери день, перетащи занятие, подтверди запись.</p>
+      <a class="btn btn-outline" href="auth.html">Войти / зарегистрироваться</a>
+    </div>
+  </section>
+
+  <section class="schedule-section">
+    <div class="container schedule-layout">
+      <div class="schedule-table">
+        <h2>Расписание</h2>
+        <p class="muted">Таблица здесь декоративная, перетаскивание не работает (статическая версия).</p>
+        <div class="schedule-calendar">
+          <div class="schedule-header">
+            <button class="btn-icon" type="button">←</button>
+            <span class="schedule-date">Дата: —</span>
+            <button class="btn-icon" type="button">→</button>
+          </div>
+          <div class="schedule-grid fake-table">
+            <div class="fake-row fake-head">
+              <div>Время</div>
+              <div>Занятие</div>
+              <div>Инструктор</div>
+            </div>
+            <div class="fake-row">
+              <div>10:00</div>
+              <div>Мягкая утренняя йога</div>
+              <div>Инструктор</div>
+            </div>
+            <div class="fake-row">
+              <div>18:30</div>
+              <div>Йога для спины</div>
+              <div>Инструктор</div>
+            </div>
+            <div class="fake-row">
+              <div>20:00</div>
+              <div>Расслабляющая практика</div>
+              <div>Инструктор</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="my-bookings">
+        <h2>Мои записи</h2>
+        <p class="muted">Мои записи (перетащи сюда).</p>
+        <div class="dropzone">
+          <p>Перетаскивай сюда занятия из таблицы слева.</p>
+          <p class="hint">Нельзя записаться на два занятия в одно и то же время.</p>
+        </div>
+        <div class="actions-row">
+          <button class="btn btn-outline" type="button">Сбросить</button>
+          <button class="btn btn-primary" type="button">Подтвердить</button>
+        </div>
+
+        <h3>Список записей</h3>
+        <div class="sorting">
+          <span>Сортировка:</span>
+          <button class="tag is-active" type="button">Ближайшие</button>
+          <button class="tag" type="button">Дата ↑</button>
+          <button class="tag" type="button">Дата ↓</button>
+        </div>
+        <div class="fake-table small">
+          <div class="fake-row fake-head">
+            <div>Дата</div>
+            <div>Занятие</div>
+          </div>
+          <div class="fake-row">
+            <div>—</div>
+            <div>Занятий пока нет</div>
+          </div>
+        </div>
+
+        <h3>Виды тренировок</h3>
+        <ul class="bullet-list">
+          <li>Мягкая йога.</li>
+          <li>Йога для спины.</li>
+          <li>Расслабляющие практики.</li>
+        </ul>
+
+        <h3>История</h3>
+        <p>Занятие попадает сюда автоматически, когда время началось.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="what-to-bring">
+    <div class="container">
+      <h2>Что взять с собой</h2>
+      <ul class="bullet-list">
+        <li>Вода.</li>
+        <li>Полотенце.</li>
+        <li>Удобная одежда.</li>
+      </ul>
+      <p>Оплата и покупка абонементов — только офлайн у администратора.</p>
+      <p>Если опаздываешь — позвони: +7 912 345 67 89.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>Yoga Time • Ижевск • ИжГТУ, корпус 1 • +7 912 345 67 89 • 2025</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
